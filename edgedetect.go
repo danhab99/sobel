@@ -8,7 +8,7 @@ import (
 	"image/png"
 	"log"
 	"os"
-	"sobel"
+	"sobel/src/sobel"
 	"strings"
 )
 

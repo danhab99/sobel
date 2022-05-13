@@ -5,8 +5,7 @@ import (
 	"image"
 	"image/color"
 	"math"
-	//  "fmt"
-	"grayscale"
+	"sobel/src/grayscale"
 )
 
 var (
@@ -25,6 +24,7 @@ var (
 
 func Filter(img image.Image) image.Image {
 	img = grayscale.ToGrayscale(img)
+
 	max := img.Bounds().Max
 	min := img.Bounds().Min
 	/* filtered image must be two pixels shorter, because
